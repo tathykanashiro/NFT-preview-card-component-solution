@@ -14,8 +14,9 @@
     margin: 0;
     padding: 0;
   }
+
   html, body {
-    width: 100%;
+    min-height: 100vh
     height: 100%;
     background: var(--veryDarkBlueMain);
 }
@@ -72,7 +73,6 @@ body {
     opacity: .7;
     color: var(--softBlue);
     line-height: 1.3em;
-    margin-bottom: 18px;
 }
 
 .span {
@@ -108,7 +108,8 @@ body {
 
 .avatar {
     display: flex;
-    align-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .avatar img {
@@ -116,7 +117,6 @@ body {
     height: 28px;
     border-radius: 50%;
     border: 1px solid #fff;
-    margin-right: 15px;
 }
 
 .avatar p {
